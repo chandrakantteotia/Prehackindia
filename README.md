@@ -4,7 +4,20 @@
 
 A fully web-based gaming platform where users can play fun browser games and earn cryptocurrency rewards. Built with Firebase, Web3, and vanilla JavaScript.
 
-![SharpPlay Banner](https://via.placeholder.com/800x200/6C63FF/FFFFFF?text=SharpPlay+Web)
+**[⚡SharpPlay](https://sharpplay-web.web.app/index.html)**
+
+## 📸 Demo Screenshots (User Flow)
+<img width="960" height="438" alt="image" src="https://github.com/user-attachments/assets/4c588d82-77e8-4bf1-a38b-f53711db9431" />
+<img width="960" height="439" alt="image" src="https://github.com/user-attachments/assets/2a5b3fb8-e9ea-41b4-a0b5-bc4b3a8964ce" />
+<img width="960" height="440" alt="image" src="https://github.com/user-attachments/assets/d949ff65-7e09-4b25-975f-2b50db28007e" />
+<img width="960" height="437" alt="image" src="https://github.com/user-attachments/assets/b4d9caf4-ac0b-4520-9317-211ab66c9faa" />
+<img width="960" height="438" alt="image" src="https://github.com/user-attachments/assets/15061f8b-3a7f-4687-80dc-18e7a14edff2" />
+<img width="960" height="435" alt="image" src="https://github.com/user-attachments/assets/fb7681a9-30c8-4082-bf55-56113667d291" />
+<img width="960" height="437" alt="image" src="https://github.com/user-attachments/assets/a4f0964f-52a2-43cd-926a-eb3585ce3290" />
+<img width="960" height="441" alt="image" src="https://github.com/user-attachments/assets/bacae39d-c96f-464c-9abe-367e2f44aa2b" />
+
+
+
 
 ## 🌟 Features
 
@@ -446,8 +459,10 @@ const receipt = await tx.wait();
 │  - Transfer tokens  │
 │  - Verify txs       │
 └─────────────────────┘
-```
 
+
+
+```
 ## 🧪 Testing
 
 ### Manual Testing Checklist
@@ -671,6 +686,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - 🔲 SDK for developers
 
 ---
+
 
 **Built with ❤️ for the Web3 Gaming Community**
 
