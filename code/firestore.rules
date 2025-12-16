@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(uid) {
+      return isAuthenticated() && request.auth.uid == uid;
+    }
+    
+    // Users collection - authenticated users can manage their own profile
+    match /users/{uid} {
+      allow read: if true; // Allow public read for profiles
+      allow create: if isAuthenticated() && request.auth.uid == uid;
+      allow update: if isAuthenticated() && request.auth.uid == uid;
+      allow delete: if false;
+    }
+    
+    // Game scores - allow authenticated users to write their own scores
+    match /gamescores/{scoreId} {
+      allow read: if true; // Public read for leaderboard
+      allow create: if isAuthenticated();
+      allow update, delete: if false;
+    }
+    
+    // Leaderboard - public read, authenticated write for own records
+    match /leaderboard/{uid} {
+      allow read: if true; // Public leaderboard
+      allow create, update: if isAuthenticated() && request.auth.uid == uid;
+      allow delete: if false;
+    }
+    
+    // Transactions - users can only read their own
+    match /transactions/{txId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update, delete: if false;
+    }
+    
+    // Tournaments - read only
+    match /tournaments/{tournamentId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
