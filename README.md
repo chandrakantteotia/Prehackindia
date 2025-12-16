@@ -644,8 +644,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - **Documentation**: See this README
 - **Issues**: GitHub Issues
-- **Discord**: [Your Discord Server]
-- **Email**: support@sharpplay.io
+- **Portfolio**: https://www.chandrakantteotia.xyz
+- **Email**: chandrakantteotia@gmail.com
 
 ## 🗺️ Roadmap
 
